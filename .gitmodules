@@ -1,0 +1,3 @@
+[submodule "doom.d/modules/os/exwm"]
+	path = doom.d/modules/os/exwm
+	url = https://github.com/LemonBreezes/exwm-module-for-doom-emacs
