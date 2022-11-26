@@ -1,11 +1,18 @@
+;;; config.el --- Pardner's configuration for doom emacs
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
+;;; Commentary:
+;;
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
+
+
+;;; Code:
+
 (setq user-full-name "Pardner"
       user-mail-address "prdnr@protonmail.com")
 
@@ -79,3 +86,7 @@
 ;; Desktopesque stuff
 (display-battery-mode)
 (display-time)
+
+(provide 'config)
+
+;;; config.el ends here
