@@ -87,6 +87,19 @@
 (display-battery-mode)
 (display-time)
 
-(provide 'config)
+;; TODO: split out
+;; exwm-xim setup
+(require 'exwm-xim)
+(exwm-xim-enable)
+(push ?\C-\\ exwm-input-prefix-keys)   ;; use Ctrl + \ to switch input method
 
+
+;; TODO: split out
+;; I haven't done the investigating ot figure out why, but mozc-im works with
+;; exwm-im and mozc doesn't.
+(require 'mozc)
+(require 'mozc-im)
+(setq default-input-method "japanese-mozc-im")
+
+(provide 'config)
 ;;; config.el ends here
