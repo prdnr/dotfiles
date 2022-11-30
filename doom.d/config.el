@@ -87,6 +87,10 @@
 (display-battery-mode)
 (display-time)
 
+;; Mastodon login
+(setq mastodon-server "https://bookwor.ms"
+      mastodon-username "pardner")
+
 ;; TODO: split out
 ;; exwm-xim setup
 (require 'exwm-xim)
